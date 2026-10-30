@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axion Technology | Soluções em Sistemas e Inovação para Empresas e Órgãos Públicos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f19',
+                        darkCard: '#131b2e',
+                        accentBlue: '#00f0ff',
+                        accentPurple: '#7000ff'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #f3f4f6; }
+        .glow-effect {
+            box-shadow: 0 0 40px -10px rgba(0, 240, 255, 0.2);
+        }
+        .glow-purple {
+            box-shadow: 0 0 40px -10px rgba(112, 0, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-gray-100 antialiased selection:bg-accentBlue selection:text-darkBg">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/85 backdrop-blur-md border-b border-gray-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-purple-600 p-0.5 flex items-center justify-center glow-effect">
+                    <div class="w-full h-full bg-darkBg rounded-[10px] flex items-center justify-center">
+                        <span class="text-cyan-400 font-extrabold text-xl">A</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">AXION</span>
+                    <span class="text-[10px] tracking-widest text-gray-400 font-semibold uppercase">Technology</span>
+                </div>
+            </div>
+
+            <!-- MENU DESKTOP -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+                <a href="#solucoes" class="hover:text-cyan-400 transition-colors">Soluções</a>
+                <a href="#metodo" class="hover:text-cyan-400 transition-colors">Método Axion Core</a>
+                <a href="#publico" class="hover:text-cyan-400 transition-colors">Setor Público & B2G</a>
+                <a href="#contato" class="hover:text-cyan-400 transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA HEADER -->
+            <div class="hidden md:block">
+                <a href="#contato" class="px-5 py-2.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-darkBg hover:from-cyan-400 hover:to-blue-500 transition-all shadow-lg shadow-cyan-500/20">
+                    Falar com Especialista
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-darkCard border border-cyan-500/30 text-cyan-400 text-xs font-semibold mb-6 tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Engenharia de Software de Alta Performance
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight mb-8">
+                Transformamos gargalos em <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent">sistemas escaláveis e seguros</span>.
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Desenvolvemos plataformas web, softwares sob medida e soluções robustas focadas no ROI do seu negócio privado ou na conformidade rigorosa de órgãos públicos.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contato" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-darkBg bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 transition-all shadow-xl shadow-cyan-500/25 text-center">
+                    Solicitar Diagnóstico Técnico
+                </a>
+                <a href="#publico" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-gray-200 bg-darkCard border border-gray-800 hover:border-cyan-500/50 transition-all text-center">
+                    Soluções para Órgãos Públicos (B2G)
+                </a>
+            </div>
+
+            <!-- METRICAS DE CONFIANÇA -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-gray-800/80 max-w-5xl mx-auto">
+                <div class="p-4">
+                    <div class="text-3xl font-extrabold text-cyan-400 mb-1">99.9%</div>
+                    <div class="text-xs text-gray-400 font-medium">Disponibilidade e Performance</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl font-extrabold text-purple-400 mb-1">Lei 14.133</div>
+                    <div class="text-xs text-gray-400 font-medium">Conformidade com Licitações</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl font-extrabold text-cyan-400 mb-1">ROI Focado</div>
+                    <div class="text-xs text-gray-400 font-medium">Redução de Custos Operacionais</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl font-extrabold text-purple-400 mb-1">Segurança</div>
+                    <div class="text-xs text-gray-400 font-medium">Arquitetura Blindada e LGPD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE SOLUÇÕES (B2B vs B2G) -->
+    <section id="solucoes" class="py-24 bg-darkCard/40 border-y border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-3">Segmentação Estratégica</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Soluções feitas sob medida para cada mercado</p>
+                <p class="text-gray-400">Entendemos as dores específicas do ecossistema privado e das exigências do setor público.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- CARD PRIVADO -->
+                <div class="p-8 rounded-2xl bg-darkCard border border-gray-800 hover:border-cyan-500/40 transition-all relative group glow-effect">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-xl">
+                        🚀
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-100">Mercado Privado & Empresas</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Desenvolvimento de plataformas SaaS, sistemas web de alta complexidade e automação de fluxos comerciais para escalar faturamento e eliminar o retrabalho.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li class="flex items-center gap-2">✓ Arquitetura Cloud escalável e moderna</li>
+                        <li class="flex items-center gap-2">✓ Integração avançada de APIs e Gateways</li>
+                        <li class="flex items-center gap-2">✓ Foco total em eficiência operacional e margem</li>
+                    </ul>
+                    <a href="#contato" class="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 text-sm">
+                        Escalar minha empresa &rarr;
+                    </a>
+                </div>
+
+                <!-- CARD PÚBLICO -->
+                <div id="publico" class="p-8 rounded-2xl bg-darkCard border border-gray-800 hover:border-purple-500/40 transition-all relative group glow-purple">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 font-bold text-xl">
+                        🏛️
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-100">Setor Público & Órgãos (B2G)</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        Sistemas especializados para Câmaras Municipais, Prefeituras e autarquias, garantindo total transparência, segurança jurídica e conformidade com a Lei de Licitações.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li class="flex items-center gap-2">✓ Atendimento rigoroso à Nova Lei de Licitações (14.133/21)</li>
+                        <li class="flex items-center gap-2">✓ Portais de transparência e atendimento ao cidadão</li>
+                        <li class="flex items-center gap-2">✓ Segurança jurídica e facilidade de auditoria</li>
+                    </ul>
+                    <a href="#contato" class="inline-flex items-center gap-2 text-purple-400 font-semibold hover:text-purple-300 text-sm">
+                        Conhecer soluções B2G &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTODO AXION CORE -->
+    <section id="metodo" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-3">Engenharia de Precisão</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Método Axion Core</p>
+                <p class="text-gray-400">Um processo estruturado de ponta a ponta para eliminar riscos, prever prazos exatos e garantir ROI mensurável.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-xl bg-darkCard/60 border border-gray-800">
+                    <span class="text-cyan-400 font-extrabold text-2xl mb-4 block">01</span>
+                    <h4 class="font-bold text-lg mb-2">Diagnóstico & Escopo</h4>
+                    <p class="text-sm text-gray-400">Mapeamento profundo do fluxo de negócio ou exigências do edital para desenhar a solução ideal.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-darkCard/60 border border-gray-800">
+                    <span class="text-cyan-400 font-extrabold text-2xl mb-4 block">02</span>
+                    <h4 class="font-bold text-lg mb-2">Arquitetura Robusta</h4>
+                    <p class="text-sm text-gray-400">Construção da base tecnológica segura, escalável e otimizada para alta disponibilidade.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-darkCard/60 border border-gray-800">
+                    <span class="text-purple-400 font-extrabold text-2xl mb-4 block">03</span>
+                    <h4 class="font-bold text-lg mb-2">Desenvolvimento Ágil</h4>
+                    <p class="text-sm text-gray-400">Entregas incrementais onde o cliente valida marcos funcionais e o progresso real.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-darkCard/60 border border-gray-800">
+                    <span class="text-purple-400 font-extrabold text-2xl mb-4 block">04</span>
+                    <h4 class="font-bold text-lg mb-2">Deploy & Sustentação</h4>
+                    <p class="text-sm text-gray-400">Publicação em ambiente seguro, monitoramento contínuo e suporte técnico especializado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO / FORMULÁRIO -->
+    <section id="contato" class="py-24 bg-darkCard/40 border-t border-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-darkCard p-8 sm:p-12 rounded-2xl border border-gray-800 shadow-2xl relative">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-extrabold mb-3">Inicie Seu Projeto com a Axion</h2>
+                    <p class="text-gray-400 text-sm">Preencha os dados abaixo para agendar uma reunião de viabilidade técnica sem compromisso.</p>
+                </div>
+
+                <form action="https://formspree.io/f/mjyyerkr" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Seu Nome / Responsável</label>
+                            <input type="text" name="nome" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-100 focus:outline-none focus:border-cyan-400 transition-colors" placeholder="Ex: Carlos Silva">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Empresa ou Órgão Público</label>
+                            <input type="text" name="empresa" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-100 focus:outline-none focus:border-cyan-400 transition-colors" placeholder="Ex: Prefeitura / Empresa XPTO">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">E-mail Corporativo</label>
+                            <input type="email" name="email" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-100 focus:outline-none focus:border-cyan-400 transition-colors" placeholder="carlos@empresa.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Segmento de Atuação</label>
+                            <select name="segmento" class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-300 focus:outline-none focus:border-cyan-400 transition-colors">
+                                <option value="Privado">Setor Privado (Empresa / SaaS / Sistema)</option>
+                                <option value="Publico">Setor Público (Órgão / Câmara / Prefeitura)</option>
+                                <option value="Outros">Outros / Consultoria</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-400 mb-2">Descreva brevemente o projeto ou desafio</label>
+                        <textarea name="mensagem" rows="4" required class="w-full bg-darkBg border border-gray-800 rounded-xl px-4 py-3 text-sm text-gray-100 focus:outline-none focus:border-cyan-400 transition-colors" placeholder="Conte-nos o que sua empresa ou órgão precisa automatizar ou desenvolver..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl font-bold text-darkBg bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 transition-all shadow-xl shadow-cyan-500/20">
+                        Solicitar Diagnóstico Estratégico Gratuito
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-gray-800/80 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-extrabold text-cyan-400">AXION TECHNOLOGY</span>
+                <span>© 2026 — Todos os direitos reservados.</span>
+            </div>
+            <div class="flex space-x-6 text-gray-400">
+                <a href="#solucoes" class="hover:text-cyan-400">Soluções</a>
+                <a href="#metodo" class="hover:text-cyan-400">Método Axion Core</a>
+                <a href="#publico" class="hover:text-cyan-400">Setor Público</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
